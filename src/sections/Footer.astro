@@ -1,0 +1,42 @@
+<div class="bg-primary px-4 py-12">
+  <footer
+    class="max-w-5xl mx-auto flex flex-col items-center gap-12 text-secondary"
+  >
+    <div class="lines-star-container">
+      <span style="transform:rotate(90deg)"></span>
+      <span style="transform:rotate(-30deg)"></span>
+      <span style="transform:rotate(-60deg)"></span>
+      <span style="transform:rotate(30deg)"></span>
+      <span style="transform:rotate(60deg)"></span>
+      <span></span>
+    </div>
+
+    <div class="flex flex-col gap-4 items-center">
+      <p>Genaro Bonavita</p>
+      <p>Developed with ❤️ in 2023</p>
+    </div>
+  </footer>
+</div>
+
+<style>
+  .lines-star-container {
+    aspect-ratio: 1 / 1;
+    flex: none;
+    height: 150px;
+    overflow: visible;
+    position: relative;
+    width: 130px;
+    z-index: 1;
+  }
+
+  .lines-star-container span {
+    background-color: currentColor;
+    flex: none;
+    height: 1px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 1px / 2);
+  }
+</style>
