@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string
+  description: string
+  imageSrc: string
+}
+
+const { title, description, imageSrc } = Astro.props
+---
+
+<article class="max-w-xs w-full">
+  <img
+    src={imageSrc}
+    width="400"
+    height="400"
+    alt={`${title} preview`}
+    title={`${title} preview`}
+    class="rounded-[3rem] w-full aspect-square"
+  />
+
+  <div class="flex flex-col gap-4 mt-8">
+    <h5 class="text-xl text-secondary">{title}</h5>
+
+    <p class="text-soft-white">
+      {description}
+    </p>
+  </div>
+</article>
