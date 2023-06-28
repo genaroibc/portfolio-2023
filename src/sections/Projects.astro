@@ -1,10 +1,14 @@
 ---
 import Section from "@/components/shared/Section.astro"
 import ProjectCard from "@/components/shared/ProjectCard.astro"
+
+import BorderedCircle from "@/components/shared/BorderedCircle.astro"
 ---
 
 <Section title="My Projects">
-  <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-12">
+  <div
+    class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-12 relative overflow-hidden"
+  >
     <ProjectCard
       imageSrc="https://picsum.photos/400"
       title="TailwindHub"
@@ -44,6 +48,22 @@ import ProjectCard from "@/components/shared/ProjectCard.astro"
       imageSrc="https://picsum.photos/400"
       title="TailwindHub"
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    />
+
+    <BorderedCircle
+      style="transform:rotate(134deg);right:4rem;--border-right-width:1rem"
+    />
+
+    <BorderedCircle
+      style="transform:rotate(34deg);left:3rem;top:-3rem;--border-left-width:1rem"
+    />
+
+    <BorderedCircle
+      style="transform:rotate(-64deg);right:4rem;top:12rem;--border-bottom-width:1rem"
+    />
+
+    <BorderedCircle
+      style="transform:rotate(200deg);left:7rem;top:40rem;--border-top-width:1rem;width:30rem;height:10rem"
     />
   </div>
 </Section>

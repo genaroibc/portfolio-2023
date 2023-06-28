@@ -1,0 +1,48 @@
+---
+interface Props {
+  style: string
+}
+
+const { style } = Astro.props
+---
+
+<div class="bordered-circle" style={style}></div>
+
+<style>
+  .bordered-circle {
+    --border-bottom-width: 1px;
+    --border-color: currentColor;
+    --border-left-width: 1px;
+    --border-right-width: 1px;
+    --border-style: solid;
+    --border-top-width: 1px;
+    border-radius: 100%;
+    bottom: 10px;
+    flex: none;
+    height: 20rem;
+    opacity: 0.2;
+    overflow: hidden;
+    position: absolute;
+    right: 30px;
+    transform: rotate(134deg);
+    width: 40rem;
+    will-change: transform;
+    z-index: 0;
+  }
+
+  .bordered-circle:after {
+    content: "";
+    border-width: var(--border-top-width, 0) var(--border-right-width, 0)
+      var(--border-bottom-width, 0) var(--border-left-width, 0);
+    border-color: var(--border-color, none);
+    border-style: var(--border-style, none);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+</style>
