@@ -3,63 +3,56 @@ import Section from "@/components/shared/Section.astro"
 import ProjectCard from "@/components/shared/ProjectCard.astro"
 
 import BorderedCircle from "@/components/shared/BorderedCircle.astro"
+import projects from "@/assets/projects.json"
 ---
 
 <Section title="My Projects">
   <div
-    class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-12 relative overflow-hidden"
+    class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-x-12 gap-y-32 relative overflow-hidden cards-container z-[999]"
   >
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    />
-    <ProjectCard
-      imageSrc="https://picsum.photos/400"
-      title="TailwindHub"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    {
+      projects.map(
+        ({
+          description,
+          // imgDescription,
+          imgUrl,
+          // isCollaborative,
+          // projectUrl,
+          // repoUrl,
+          // technologies,
+          title
+        }) => (
+          <div class="card-wrapper">
+            <ProjectCard
+              imageSrc={imgUrl}
+              title={title}
+              description={description}
+            />
+          </div>
+        )
+      )
+    }
+
+    <BorderedCircle
+      style="z-index:-10;transform:rotate(134deg);right:4rem;bottom:10rem;--border-right-width:1rem"
     />
 
     <BorderedCircle
-      style="transform:rotate(134deg);right:4rem;bottom:10rem;--border-right-width:1rem"
+      style="z-index:-10;transform:rotate(-164deg);right:4rem;top:12rem;--border-bottom-width:1rem"
     />
 
     <BorderedCircle
-      style="transform:rotate(-164deg);right:4rem;top:12rem;--border-bottom-width:1rem"
-    />
-
-    <BorderedCircle
-      style="transform:rotate(200deg);left:7rem;bottom:40rem;--border-top-width:1rem;width:30rem;height:10rem"
+      style="z-index:-10;transform:rotate(200deg);left:7rem;bottom:40rem;--border-top-width:1rem;width:30rem;height:10rem"
     />
   </div>
 </Section>
+
+<style>
+  .card-wrapper {
+    transition: filter 0.2s ease-in-out;
+  }
+
+  .cards-container:has(.card-wrapper:hover) .card-wrapper:not(:hover) {
+    filter: grayscale(1) brightness(40%);
+  }
+</style>
