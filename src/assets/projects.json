@@ -58,16 +58,6 @@
     "isCollaborative": true
   },
   {
-    "title": "wc-notify",
-    "imgUrl": "/img/projects/wc-notify.webp",
-    "technologies": ["typescript", "javascript", "node", "css"],
-    "imgDescription": "wc-notify website preview",
-    "description": "wc-notify is an npm package to show simple and customizable toast notifications. It's built on top of the Web Components standard, so it is available on all frameworks. It allows you to customize the duration, theme, animation, and much more.",
-    "repoUrl": "https://github.com/GenaroIBC/wc-notify",
-    "projectUrl": "https://codesandbox.io/s/wc-notify-demo-nn687m",
-    "isCollaborative": false
-  },
-  {
     "title": "InfoJobs UI",
     "imgUrl": "/img/projects/infojobs-ui.webp",
     "technologies": ["typescript", "react", "tailwind"],
@@ -129,56 +119,6 @@
     "description": "A generator of banners for social networks like Twitter, LinkedIn and Youtube. You upload only one image, and Shape Snap automatically crops it to the needed size for each platform.",
     "repoUrl": "https://github.com/GenaroIBC/shape-snap",
     "projectUrl": "https://shape-snap.vercel.app/",
-    "isCollaborative": false
-  },
-  {
-    "title": "Full-stack ToDo",
-    "imgUrl": "/img/projects/fullstack-todo.webp",
-    "technologies": ["nextjs", "react", "javascript", "css", "mongodb"],
-    "imgDescription": "ToDo website preview",
-    "description": "The typical To-Do application, but integrating both client and server sides, with users authentication and data persistence with MongoDB.",
-    "repoUrl": "https://github.com/GenaroIBC/fullstack-todo-app",
-    "projectUrl": "https://fullstack-todo-app-ten.vercel.app/tasks",
-    "isCollaborative": false
-  },
-  {
-    "title": "tic-tac-toe",
-    "imgUrl": "/img/projects/tictactoe.webp",
-    "technologies": ["javascript", "css", "html"],
-    "imgDescription": "Tic Tac Toe website preview",
-    "description": "In this version of the well-known Tic-Tac-Toe, you can play versus the machine, store your points locally to play later, change players colors and some other funny features.",
-    "repoUrl": "https://github.com/GenaroIBC/tic-tac-toe",
-    "projectUrl": "https://genaroibc.github.io/tic-tac-toe",
-    "isCollaborative": false
-  },
-  {
-    "title": "Connect Four",
-    "imgUrl": "/img/projects/connect-four.webp",
-    "technologies": ["react", "typescript", "css", "html"],
-    "imgDescription": "Connect Four website preview",
-    "description": "My version of the \"Connect Four\" game, implementing OOP with TypeScript and separating logic from view.",
-    "repoUrl": "https://github.com/GenaroIBC/connect-four",
-    "projectUrl": "https://connect-four-mauve.vercel.app/",
-    "isCollaborative": false
-  },
-  {
-    "title": "Crypto Assets",
-    "imgUrl": "/img/projects/crypto-assets.webp",
-    "technologies": ["react", "nextjs", "javascript", "css"],
-    "imgDescription": "Crypto Assets website preview",
-    "description": "A simple dashboard to view your crypto address's transactions, with a minimalist design based on Material Design style guidelines.",
-    "repoUrl": "https://github.com/CollaborativeTeam/challenge/tree/develop-genaro",
-    "projectUrl": "https://challenge-cyan.vercel.app/",
-    "isCollaborative": false
-  },
-  {
-    "title": "Password Generator",
-    "imgUrl": "/img/projects/password-generator.webp",
-    "technologies": ["html", "css", "javascript"],
-    "imgDescription": "Password generator website preview",
-    "description": "A custom and secure password generator. The combination of numbers, symbols, and upper, lower and mixed case result in a wide variety of combinations. Made with vanilla JS.",
-    "repoUrl": "https://github.com/GenaroIBC/password-generator",
-    "projectUrl": "https://pass-generator-2022.netlify.app/",
     "isCollaborative": false
   }
 ]
